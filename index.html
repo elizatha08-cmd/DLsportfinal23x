@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DL SPORT - Ropa Deportiva</title>
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/css/mi-estilo.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <style>
+            html{scroll-behavior:smooth} 
+            .card-img-wrapper img.img-fix{object-fit:contain !important; background:#fff; padding:10px;}
+        </style>
+     </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg nav-background sticky-top">
+                <div class="container">
+                    <a class="navbar-brand texto-blanco fw-bold" href="#">
+                        <img src="dist/imagenes/logo2.jpg" alt="Logo" width="120" height="50" class="d-inline-block align-text-top rounded"> DL SPORT
+                    </a>
+                    <button type="button" class="navbar-toggler boton-nav" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navmenu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link texto-blanco" href="#">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link texto-blanco" href="#hombres">Hombre</a></li>
+                            <li class="nav-item"><a class="nav-link texto-blanco" href="#mujeres">Mujer</a></li>
+                            <li class="nav-item"><a class="nav-link texto-blanco" href="#ofertas">Ofertas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- CARROUSEL -->
+            <section>
+                <div id="micarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#micarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#micarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#micarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">                        
+                        <div class="carousel-item active"><img src="dist/imagenes/baner2.jpg" class="d-block w-100" alt="Colección"><div class="carousel-caption d-none d-md-block"><h5>NUEVA COLECCIÓN</h5><p>Ligereza y velocidad.</p></div></div> 
+                        <div class="carousel-item"><img src="dist/imagenes/baner2.jpg" class="d-block w-100" alt="Gym"><div class="carousel-caption d-none d-md-block"><h5>POTENCIA TU ENTRENAMIENTO GYM</h5><p>Ropa transpirable.</p></div></div> 
+                        <div class="carousel-item"><img src="dist/imagenes/baner2.jpg" class="d-block w-100" alt="Ofertas"><div class="carousel-caption d-none d-md-block"><h5>HASTA 50% OFF</h5><p>En camisetas seleccionadas.</p></div></div> 
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#micarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#micarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                </div>
+            </section>
+
+            <!-- CARDS PRINCIPALES -  -->
+            <section class="container mt-4">
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-4 d-flex">
+                        <div class="card card-efecto-3d h-100 w-100">
+                            <div class="card-img-wrapper"><img src="dist/imagenes/logo1.webp" class="card-img-top img-fix" alt="Polo"></div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <div class="flex-grow-1"><h5 class="card-title">polo cuello camisero Adidas tenis turquesa</h5><p class="card-text">Tejido transpirable y ligero. <span class="badge bg-danger">DESCUENTO</span></p></div>
+                                <div class="mt-3"><button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#modalDetallePolo">Ver Detalle</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4 d-flex">
+                        <div class="card card-efecto-3d h-100 w-100">
+                            <div class="card-img-wrapper"><img src="dist/imagenes/logoviviri.webp" class="card-img-top" alt="Viviri"></div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <div class="flex-grow-1"><h5 class="card-title">viviri algodon</h5><p class="card-text">Secado rápido y anti-sudor. <span class="badge bg-danger">NUEVO</span></p></div>
+                                <div class="mt-3"><button class="btn btn-secondary w-100" style="cursor:not-allowed;">Comprar</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4 d-flex">
+                        <div class="card card-efecto-3d h-100 w-100">
+                            <div class="card-img-wrapper"><img src="dist/imagenes/logo3.jpg" class="card-img-top" alt="Casaca"></div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <div class="flex-grow-1"><h5 class="card-title">casaca deportiva</h5><p class="card-text">Tejido suave y abrigador. <span class="badge bg-danger">-30%</span></p></div>
+                                <div class="mt-3"><button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#modalFormCasaca">Comprar</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION HOMBRES Y MUJER -->
+            <section id="hombres" class="container mt-5 pt-4">
+                <h2 class="titulo-seccion">HOMBRE</h2>
+                <p class="texto-seccion">Productos para hombre - agrega tus fotos aquí</p>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polonegro.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Negro Deportivo-standar</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetavaronacero.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta adidas acero en S-M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetavaronrojo2.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta rojo adidas M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetavaronblanco.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo deportivo blanco adidas S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetavaronverde.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo verde Deportivo S-M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodeportivoamarillo.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta deportiva columbus S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodeportivorealblanco.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta deportiva real madrid blanco S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodeportivoreal.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta real madrid tercera temporada verde M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetamanchester.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta manchester united S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetargentina.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta argentina S-M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetaperu.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta Perú S-M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetaitalia2.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>camiseta titular italia S-M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetabrasil2.jfif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Deportivo Brasil S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetaU.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Deportivo Universitario de deportes S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/camisetaalianza.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Deportivo Alianza S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntohombre.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>conjunto adidas azul M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntohombreacero.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>conjunto plomo adidas M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntohombrecrema.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>conjunto adidas beige S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntohombreblanco.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>conjunto adidas blanco franjas negras M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntohombrerojo.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5></h5>conjunto adidas rojo S-M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntohombrenegro.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>conjunto negro adidas S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortvaronnegro.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>short deportivo negro ligero M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortvaronacero.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>short deportivo azul poliester M-L-XL</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortvaronplomo.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>short deportivo plomo S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortvaronblanco.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Short Adidas blanco S-M-L-Xl</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortvaronrojo2.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>short deportivo rojo ligero S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortvaronverdepetroleo.png" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Short deportivo tafeta verde S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+
+                </div>
+            </section>
+
+            <section id="mujeres" class="py-5 mt-4" style="background:#f5f5f5;">
+                <div class="container">
+                    <h2 class="titulo-seccion">MUJER</h2>
+                    <p class="texto-seccion">Productos para mujer</p>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamarosado.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo adidas rosa S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/poloadidasdamaceleste.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Adidas acero M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/viviridama.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Camiseta viviri Dry-Fit S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamanegro.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Dry-Fit negro S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamablancoadidas.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Adidas Dry-Fit blanco S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamarojoadidas.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo Adidas rojo S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamaplomo.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Camiseta Dry-Fit Plomo S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamaacero.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>polo celeste Dry-Fit S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamacolores.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Camiseta Dry-Fit Colores S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamacamiseroturqueza.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Camiseta Dry-Fit Turqueza S-M-L </h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamacamiseroguinda.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>polo deportivo guinda S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/polodamacamiseroacero.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo deportivo cuello camisero S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntodamanegro.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto deportivo negro S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntodamaguinda.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto guinda S-m-l</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntodamacrema.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto beige S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntodamaazul.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto acero S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntodama2colores.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto rosa S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntodamarojo.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto rojo S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/conjuntodamablanco.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto blanco S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortdamabarnie.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Short barnie S-M-L </h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortdamanegro.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>short negro S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortdamafuxia.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Short Rosa S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortdamalivianoceleste.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Short celeste S-M-L</h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortdamaverde.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Short verde S-M-L </h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+                        <div class="col-12 col-md-4 mb-4"><div class="card h-100"><img src="dist/imagenes/shortdamalila.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Short lila S-M-L </h5><button class="btn btn-success w-100">Comprar</button></div></div></div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="ofertas" class="container mt-5 pt-4">
+                <h2 class="titulo-seccion text-danger">OFERTAS</h2>
+                <p class="texto-seccion">Hasta 50% OFF</p>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100 border-danger"><span class="badge bg-danger position-absolute m-2">-30%</span><img src="dist/imagenes/casacaroja.avif" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Casaca Roja talla M</h5><button class="btn btn-danger w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100 border-danger"><span class="badge bg-danger position-absolute m-2">-30%</span><img src="dist/imagenes/poloofertaacero.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>POLO PUMA S-M-L</h5><button class="btn btn-danger w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100 border-danger"><span class="badge bg-danger position-absolute m-2">-30%</span><img src="dist/imagenes/ofertaconjuntonegro.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Conjunto buzo negro M-L</h5><button class="btn btn-danger w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100 border-danger"><span class="badge bg-danger position-absolute m-2">-30%</span><img src="dist/imagenes/ofertalicrapolovaron.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>Polo deportivo licra standar</h5><button class="btn btn-danger w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100 border-danger"><span class="badge bg-danger position-absolute m-2">-30%</span><img src="dist/imagenes/ofertabuzoacero.webp" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>buzo azul talla M</h5><button class="btn btn-danger w-100">Comprar</button></div></div></div>
+                    <div class="col-12 col-md-4 mb-4"><div class="card h-100 border-danger"><span class="badge bg-danger position-absolute m-2">-30%</span><img src="dist/imagenes/ofertacuellocamisero.jpg" class="card-img-top" style="height:280px;object-fit:cover"><div class="card-body text-center"><h5>polo deportivo camisero standar</h5><button class="btn btn-danger w-100">Comprar</button></div></div></div>
+
+                </div>
+            </section>
+
+            <!-- EFECTO 3D -->
+            <section class="container seccion-3d">
+                <h2 class="titulo-seccion">visualizacion 3D del producto</h2>
+                <p class="texto-seccion">interactua con cada diseño</p>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-3">
+                        <h3 class="subtitulo-3d">1.polo puma verde</h3>
+                        <div class="caja-demo"><div class="escena-3d"><div class="tarjeta-giro"><div class="cara-frontal"><img src="dist/imagenes/ejepolodelante.avif" style="width:100%; height:100%; object-fit:cover;"></div><div class="cara-trasera"><img src="dist/imagenes/ejepolodetras.avif" style="width:100%; height:100%; object-fit:cover;"></div></div></div></div>
+                        <p class="nota-3d">polo puma verde Vista 360°.</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <h3 class="subtitulo-3d">2. polo negro deportivo</h3>
+                        <div class="caja-demo demo-eje-x"><div class="panel-eje-x"><img src="dist/imagenes/polonegro.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:15px;"></div></div>
+                        <p class="nota-3d">polo negro deportivo</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <h3 class="subtitulo-3d">3.polo puma rojo</h3>
+                        <div class="caja-demo"><div class="escena-cubo"><div class="cubo-3d"><div class="cara-cubo cara-frente"><img src="dist/imagenes/polorojodelantechico.jpg" style="width:100%; height:100%; object-fit:cover;"></div><div class="cara-cubo cara-atras"><img src="dist/imagenes/polorojodetraschico.jpg" style="width:100%; height:100%; object-fit:cover;"></div><div class="cara-cubo cara-derecha"><img src="dist/imagenes/polorojocostado.jpg" style="width:100%; height:100%; object-fit:cover;"></div><div class="cara-cubo cara-izquierda"><img src="dist/imagenes/polorojofrentesolo.jpg" style="width:100%; height:100%; object-fit:cover;"></div><div class="cara-cubo cara-arriba"><img src="dist/imagenes/polorojocompleto.jpg" style="width:100%; height:100%; object-fit:cover;"></div><div class="cara-cubo cara-abajo"><img src="dist/imagenes/polorojodetraschico.jpg" style="width:100%; height:100%; object-fit:cover;"></div></div></div></div>
+                        <p class="nota-3d">polo puma rojo-6 angulos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRENDAS APILADAS -->
+            <section class="container seccion-3d">
+                <h2 class="titulo-seccion">productos en tendencia</h2>
+                <p class="texto-seccion">descubre nuestros productos destacados al pasar el mouse</p>
+                <h3 class="subtitulo-3d">Colección Destacada</h3>
+                <div class="estante">
+                    <article class="libro libro-a"><img src="dist/imagenes/camisetaarg.jpg" alt="Camiseta"><strong>Camiseta</strong><p>Tela ultra ligera Dry-Fit.</p></article>
+                    <article class="libro libro-b"><img src="dist/imagenes/short negro.webp" alt="Short"><strong>Short</strong><p>taslan importado resiste al rasgado.</p></article>
+                    <article class="libro libro-c"><img src="dist/imagenes/buzoazul.jpg" alt="buzos"><strong>buzos</strong><p>Franela reactiva premium.</p></article>
+                    <article class="libro libro-d"><img src="dist/imagenes/casacaroja.avif" alt="casacas"><strong>casacas</strong><p>Abrigo térmico para exteriores.</p></article>
+                    <article class="libro libro-e"><img src="dist/imagenes/wantes arquero.jfif" alt="Accesorios"><strong>Accesorios</strong><p>agarre de otro nivel.</p></article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-dlsport pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <h4 class="fw-bold" style="color:#000;"><img src="dist/imagenes/logo2.jpg" width="40" height="35" class="me-2 rounded"> DL SPORT</h4>
+                        <p class="mt-3" style="color:#000 !important; font-size:16px;">En DL SPORT somos apasionados por el deporte. Ofrecemos ropa deportiva de alta calidad con tecnología Dry-Fit, transpirable y cómoda para tu día a día.</p>
+                        <p class="small" style="color:#000;">Lima - Perú | Envíos a todo el país</p>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <h5 class="fw-bold" style="color:#000;">Síguenos</h5>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="https://facebook.com" target="_blank" class="btn btn-dark rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:22px;"><i class="bi bi-facebook"></i></a>
+                            <a href="https://instagram.com" target="_blank" class="btn btn-dark rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:22px;"><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/51999999999" target="_blank" class="btn btn-success rounded-circle" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:22px;"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center small" style="color:#000;">© 2026 DL SPORT - Todos los derechos reservados</div>
+            </div>
+        </footer>
+
+        <!-- MODALES -->
+        <div class="modal fade" id="modalDetallePolo" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">polo cuello camisero turquesa</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body text-center"><img src="dist/imagenes/logo1.webp" class="img-fluid mb-3" style="max-height:300px; object-fit:contain;"><p>Tejido transpirable y ligero. Tecnología Dry-Fit Adidas.</p><p><span class="badge bg-danger">DESCUENTO</span> <strong>S/ 89.90</strong></p></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div>
+
+        <div class="modal fade" id="modalFormCasaca" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Comprar: casaca deportiva</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p class="small text-muted">Formulario visual - solo demostrativo</p><form onsubmit="return false;"><div class="mb-3"><label class="form-label">Nombre</label><input type="text" class="form-control" placeholder="Tu nombre"></div><div class="mb-3"><label class="form-label">Talla</label><select class="form-select"><option>S</option><option>M</option><option>L</option></select></div><div class="mb-3"><label class="form-label">Cantidad</label><input type="number" class="form-control" value="1"></div><div class="mb-3"><label class="form-label">Dirección</label><input type="text" class="form-control" placeholder="Av. ..."></div><button type="button" class="btn btn-success w-100">Confirmar (Demo)</button></form></div></div></div></div>
+
+        <script src="dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
